@@ -1,0 +1,7 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { otherTableBase } from "@/lib/other-table";
+
+export const metadata: Metadata = { title: "Visit | Other Table", robots: { index: false, follow: false } };
+
+export default function VisitPage() { return <main id="ot-main" className="ot-interior-main"><header className="ot-page-intro"><span className="ot-kicker">BEFORE YOU COME BY</span><h1>Find your<br /><em>way here.</em></h1><p>Everything a guest should be able to check before leaving home. This demo has no real address, phone number or live opening hours.</p></header><div className="ot-info-grid ot-page-divider"><div><span className="ot-kicker">VISIT DETAILS</span><h2>The practical<br /><em>bits.</em></h2><p>A real restaurant launch would place its verified address, map, transport advice and direct telephone contact here.</p></div><div><dl className="ot-visit-list"><div><dt>Location</dt><dd>To be confirmed with a real venue</dd></div><div><dt>Sample dinner hours</dt><dd>Tue–Sun · 18:00–22:30</dd></div><div><dt>Sample lunch hours</dt><dd>Sat–Sun · 12:00–15:00</dd></div><div><dt>Accessibility</dt><dd>Contact the venue to confirm step-free access and seating needs</dd></div></dl><p>Hours and access information above are illustrative. There is no operating venue behind this concept, so please do not travel based on this page.</p><Link className="ot-button ot-button-dark" href={`${otherTableBase}/reserve`}>Try the reservation demo <span aria-hidden="true">↗</span></Link></div></div></main>; }

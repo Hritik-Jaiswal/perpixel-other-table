@@ -1,0 +1,2 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}h1,h2,h3,p{margin:0}button,input,select,textarea{font:inherit}button{background:none;color:inherit}a{color:inherit}img{display:block}::selection{background:#762d37;color:#f0e9dc}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
