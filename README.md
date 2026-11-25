@@ -19,6 +19,9 @@ Visit `http://localhost:3000`. Check `npm run lint` and `npm run build` before d
 - `src/components/`: menu filter, reservation simulator and gatherings enquiry preview.
 - `src/lib/other-table.ts`: illustrative menu content and INR prices.
 - `public/images/`: original concept imagery generated for this project and optimized to WebP.
+- `public/graphics/`: original invitation seal, table etching and olive illustration used across the site.
+
+The tablet and mobile header uses a keyboard-accessible native dialog. The footer wordmark and selected imagery respond continuously to scroll position; reduced-motion visitors see static treatments. Keep animation work in `src/components/OtherTableMotion.tsx` outside React render state.
 
 There is no booking provider, enquiry backend, payment, live address or real restaurant behind this demo. Reservation times and private dining formats are examples. The forms do not collect or send personal details. Restaurant pages have `noindex` metadata while the concept remains fictional.
 
